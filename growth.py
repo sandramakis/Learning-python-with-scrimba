@@ -24,3 +24,15 @@ item_name = "Sunglasses"
 price = 5500
 quantity_in_stock = 5
 print('We have ' + item_name + " at N" + str(price) + " and just " + str(quantity_in_stock) + " pcs are left")
+
+
+# Basic Arithmetic
+k=10
+l=3
+print('Addition : ', k + l)
+print('Subtraction : ', k - l)
+print('Multiplication : ', k * l)
+print('Division (float) : ', k / l)
+print('Division (floor) : ', k // l)
+print('Modulus : ', k % l)
+print('Exponent : ', k ** l)
