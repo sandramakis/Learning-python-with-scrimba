@@ -36,3 +36,35 @@ print('Division (float) : ', k / l)
 print('Division (floor) : ', k // l)
 print('Modulus : ', k % l)
 print('Exponent : ', k ** l)
+
+# Strings -Basic/Slicing 
+msg = "welcome to Python 101: Strings"
+
+print(msg, msg) # welcome to Python 101: Strings welcome to Python 101: Strings
+print(msg.lower()) #  welcome to python 101: strings
+print(msg.upper()) # welcome to python 101: strings
+print(msg.upper()) # WELCOME TO PYTHON 101: STRINGS
+print(msg.capitalize()) # Welcome to python 101: strings (reverses the current state of the letter)
+print(msg.title()) # elcome To Python 101: Strings
+
+# Getting informations from a string
+print(len(msg)) # 30
+print(msg.count("python")) #0 (because the count methos is case senstitive)
+print(msg.count('t')) #3
+
+# Slicing(positive-front. Negative- back. Colon- start to end)
+print(msg[2]) #l
+print(msg[-4]) #i
+print(msg[3:10]) #lcome to (the end index is not included)
+print(msg[:7]) # welcome
+
+# EXERCISE 
+# 1. From the string "Welcome to Python 101- Strings", extract text and create a new string that says "1 Welcome Ring To Tyler"
+
+msg2=msg[18]+ " " + msg[:8] + msg[-5:-1] + msg[7:11] + msg[13] + msg[12]+msg[2]+msg[6]+msg[-5]
+print(msg2.title())
+
+
+#2. Print the same string backwards
+print(msg2[::-1].title())
+
